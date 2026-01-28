@@ -1,3 +1,4 @@
+import { createInterface } from "readline";
 const greeting = "hello,";
 const target = "world";
 console.log(greeting + target);
@@ -10,5 +11,13 @@ console.log("hello \u20bb world");
 const yes = true;
 const no = false;
 console.log(yes, no);
-export {};
+const rl = createInterface({
+    input: process.stdin,
+    output: process.stdout,
+});
+rl.question('数値を入力してください:', (line) => {
+    const Num = Number(line);
+    console.log(Num + 1000);
+    rl.close();
+});
 //# sourceMappingURL=index.js.map
