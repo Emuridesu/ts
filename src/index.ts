@@ -25,40 +25,53 @@ const rl = createInterface({
     output: process.stdout,
 });
 
+//&&は値が入っていれば右側を返す。||は値が入っていれば左側を返す
 rl.question('数値を入力してください:', (line) => {
-    const Num = Number(line);
+    const Num = line && "名前なし"
 
-    console.log(Num + 1000)
+    console.log(Num)
     rl.close();
-}) 
+});
 
-const x = 123;
-const minusx = -x;
+// const change = "12"
+// Number(change);
 
-console.log(minusx)
+// console.log(change);
 
-const change = "12"
-Number(change);
+// const tasuchange= "123"
 
-console.log(change);
+// console.log(+tasuchange)
 
-const tasuchange= "123"
+// const left1 = -5, right1 = 0
 
-console.log(+tasuchange)
+// console.log(left1 < right1)
 
-const left1 = -5, right1 = 0
+// const left2 = -5, right2 = 0
 
-console.log(left1 < right1)
+// console.log(left2 > right2)
 
-const left2 = -5, right2 = 0
+// const left3 = 5, right3 = 0
 
-console.log(left2 > right2)
+// console.log(left3 < right3)
 
-const left3 = 5, right3 = 0
+// const left4 = 5, right4 = 0
 
-console.log(left3 < right3)
+// console.log(left4 > right4)
 
-const left4 = 5, right4 = 0
+// rl.question("パスワードを入力してください", (password) => {
+//     if(password === "hogehoge"){
+//         console.log("いらっしゃい。レミリア・スカーレットよ。")
+//     }else{
+//         console.log("誰？あなた？")
+//     }
+//     rl.close();
+// })
 
-console.log(left4 > right4)
+//const a_name = "a" || nameのような式は使えない使うならnameとaを反対する
+const a_name = "a" 
+const b_name = "b"
 
+const a = !!a_name;
+const b = !!b_name;
+
+console.log(!!a_name && !!b_name);
