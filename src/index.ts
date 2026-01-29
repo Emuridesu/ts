@@ -31,3 +31,34 @@ rl.question('数値を入力してください:', (line) => {
     console.log(Num + 1000)
     rl.close();
 }) 
+
+const x = 123;
+const minusx = -x;
+
+console.log(minusx)
+
+const change = "12"
+Number(change);
+
+console.log(change);
+
+const tasuchange= "123"
+
+console.log(+tasuchange)
+
+const left1 = -5, right1 = 0
+
+console.log(left1 < right1)
+
+const left2 = -5, right2 = 0
+
+console.log(left2 > right2)
+
+const left3 = 5, right3 = 0
+
+console.log(left3 < right3)
+
+const left4 = 5, right4 = 0
+
+console.log(left4 > right4)
+
