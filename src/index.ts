@@ -75,3 +75,9 @@ const a = !!a_name;
 const b = !!b_name;
 
 console.log(!!a_name && !!b_name);
+let userName 
+
+if(userName === "") userName = "名無し";
+
+//基本if文のネストは浅くすぐに返すこと
+//if(userName === "") return 0; やthrow new $e;など
